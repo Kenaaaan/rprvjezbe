@@ -4,6 +4,7 @@ public class Zadatak1 {
 
         Scanner ulaz = new Scanner(System.in);
         int a = ulaz.nextInt(),b = ulaz.nextInt();
+
         System.out.println(a);
         System.out.println(b);
     }
