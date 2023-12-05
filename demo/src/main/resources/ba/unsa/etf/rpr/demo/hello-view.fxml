@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="255.0" prefWidth="249.0" vgap="5.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.demo.Controller">
+    <stylesheets>
+        <URL value="@prijava.css" />
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="54.400000000000006" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="63.00000000000001" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="54.20000000000002" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="55.19999999999999" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints maxHeight="50.4" minHeight="10.0" prefHeight="38.4" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="50.4" minHeight="10.0" prefHeight="38.4" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.39999999999999" minHeight="10.0" prefHeight="32.39999999999999" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.39999999999999" minHeight="10.0" prefHeight="32.39999999999999" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.39999999999999" minHeight="10.0" prefHeight="32.39999999999999" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Button fx:id="procenat" mnemonicParsing="false" onAction="#procenatClick" prefHeight="26.0" prefWidth="39.0" text="\%" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="dijeljenje" mnemonicParsing="false" onAction="#dijeljenjeClick" prefHeight="26.0" prefWidth="39.0" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="mnozenje" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#mnozenjeClick" prefHeight="26.0" prefWidth="40.0" text="x" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="minus" mnemonicParsing="false" onAction="#minusClick" prefHeight="26.0" prefWidth="37.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="jedan" mnemonicParsing="false" onAction="#jedanClick" prefHeight="26.0" prefWidth="35.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <Button fx:id="pet" mnemonicParsing="false" onAction="#petClick" prefHeight="26.0" prefWidth="39.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Button fx:id="sest" mnemonicParsing="false" onAction="#sestClick" prefHeight="26.0" prefWidth="44.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Button fx:id="nula" mnemonicParsing="false" onAction="#nulaClick" prefHeight="26.0" prefWidth="136.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+        <Button fx:id="osam" mnemonicParsing="false" onAction="#osamClick" prefHeight="26.0" prefWidth="38.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="devet" mnemonicParsing="false" onAction="#devetClick" prefHeight="26.0" prefWidth="40.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="sedam" mnemonicParsing="false" onAction="#sedamClick" prefHeight="26.0" prefWidth="37.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="cetiri" mnemonicParsing="false" onAction="#cetiriClick" prefHeight="26.0" prefWidth="37.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Button fx:id="dva" mnemonicParsing="false" onAction="#dvaClick" prefHeight="26.0" prefWidth="41.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <Button fx:id="tri" mnemonicParsing="false" onAction="#triClick" prefHeight="26.0" prefWidth="42.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <Button fx:id="sabiranje" mnemonicParsing="false" onAction="#sabiranjeClick" prefHeight="82.0" prefWidth="37.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+        <Button fx:id="tacka" mnemonicParsing="false" onAction="#tackaClick" prefHeight="26.0" prefWidth="45.0" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+        <Button fx:id="prijavaBtn" mnemonicParsing="false" onAction="#jednakoClick" prefHeight="71.0" prefWidth="37.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+      <Label fx:id="label_ispis" prefHeight="24.0" prefWidth="242.0" GridPane.columnSpan="4" />
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+</GridPane>
